@@ -25,6 +25,11 @@ header {
     align-items: center;
 }
 
+.header-content {
+  text-align: center;
+  flex-grow: 1;
+}
+
 header h1, header p {
     margin: 0 auto;
     padding: 10px;
