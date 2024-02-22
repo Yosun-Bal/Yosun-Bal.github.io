@@ -27,6 +27,20 @@ header h1, header p {
     padding: 10px;
 }
 
+/* Language Switcher dropdown */
+#languageSwitcher {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  cursor: pointer;
+}
+
+#languageSwitcher:hover, #languageSwitcher:focus {
+  border-color: #007bff; /* Matches the site color */
+  outline: none; /* Removes the default focus outline */
+}
+
 /* Stylish Separator for Sections */
 section {
     margin-bottom: 20px;
