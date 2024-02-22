@@ -60,9 +60,8 @@ header h1, header p {
   background-color: #f9f9f9;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  text-align: left;
-  min-width: calc(100% - 20px);
-  box-sizing: border-box;
+  text-align: center;
+  min-width: 100%;
 }
 
 .language-switcher .dropdown-content a {
