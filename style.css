@@ -31,7 +31,6 @@ header h1, header p {
 .language-switcher {
   display: inline-block;
   position: relative;
-  text-align: center;
 }
 
 .language-switcher button {
@@ -40,19 +39,16 @@ header h1, header p {
   border: 1px solid #ddd;
   border-radius: 5px;
   cursor: pointer;
-  width: auto;
 }
 
 .language-switcher .dropdown-content {
   display: none;
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  right: 0;
   background-color: #f9f9f9;
-  min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  text-align: left;
 }
 
 .language-switcher .dropdown-content a {
