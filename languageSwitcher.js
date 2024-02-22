@@ -1,11 +1,18 @@
 document.addEventListener('DOMContentLoaded', function() {
   var selector = document.getElementById('languageSwitcher');
   if (selector) {
-    // Set the current language as selected based on the page's language.
-    const currentLang = document.body.className.match(/lang-(\w+)/);
-    if (currentLang && currentLang[1]) {
-      selector.value = `index_${currentLang[1]}.html`; // Dependency on the file naming scheme
-    }
+    // Dynamically construct the filename based on the <html lang=""> attribute
+    const currentLang = document.documentElement.lang; // Get the language code
+
+    // Construct the value to select based on the current language
+    let valueToSelect = `index${currentLang === 'en' ? '' : '_' + currentLang}.html`;
+
+    // Set the selector to the correct value
+    Array.from(selector.options).forEach(option => {
+      if(option.value === valueToSelect) {
+        selector.value = valueToSelect;
+      }
+    });
 
     // Listen for changes to redirect to the selected language version.
     selector.addEventListener('change', function() {
