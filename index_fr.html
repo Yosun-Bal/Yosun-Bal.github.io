@@ -8,14 +8,19 @@
 </head>
 <body>
   <header>
-    <h1>Yosun Bal</h1>
-    <p>Traducteur professionnel anglais-turc-français</p>
-    <!-- Language Switcher Dropdown -->
-    <select id="languageSwitcher">
-      <option value="index.html">English</option>
-      <option value="index_fr.html">Français</option>
-      <option value="index_tr.html">Türkçe</option>
-    </select>
+    <div class="header-content">
+      <h1>Yosun Bal</h1>
+      <p>Traducteur professionnel anglais-turc-français</p>
+    </div>
+    <!-- Custom Language Switcher Dropdown -->
+    <nav class="language-switcher">
+      <button aria-haspopup="true" aria-expanded="false">Langue</button>
+      <div class="dropdown-content">
+        <a href="index.html">English</a>
+        <a href="index_fr.html">Français</a>
+        <a href="index_tr.html">Türkçe</a>
+      </div>
+    </nav>
   </header>
 
   <section id="about">

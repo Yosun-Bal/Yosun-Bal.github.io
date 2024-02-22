@@ -17,14 +17,64 @@ body {
 header {
     background: #007BFF; /* A vibrant header color */
     color: #ffffff;
-    padding-bottom: 20px;
+    padding: 20px;
     margin-bottom: 20px;
     border-bottom: 5px solid #0056b3; /* Add a bit of depth */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content {
+  text-align: center;
+  flex-grow: 1;
 }
 
 header h1, header p {
-    text-align: center;
+    margin: 0 auto;
     padding: 10px;
+}
+
+/* Language Switcher dropdown */
+.language-switcher {
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+}
+
+.language-switcher button {
+  padding: 10px 20px;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  white-space: nowrap;
+  font-size: inherit;
+  min-width: 100px;
+}
+
+.language-switcher .dropdown-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  text-align: center;
+  min-width: 100%;
+}
+
+.language-switcher .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: inherit;
+  white-space: nowrap;
+}
+
+.language-switcher .dropdown-content a:hover {
+  background-color: #f1f1f1;
 }
 
 /* Stylish Separator for Sections */
@@ -32,7 +82,7 @@ section {
     margin-bottom: 20px;
     padding: 20px;
     background: #f8f8f8; /* A softer shade than white */
-    border-radius: 10px; /* Rounded corners for a modern look */
+    border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Subtle shadow for depth */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for interactions */
 }
@@ -43,7 +93,7 @@ section:hover {
 }
 
 h2 {
-    border-bottom: 2px solid #007BFF; /* Underline for headers */
+    border-bottom: 2px solid #007BFF;
     color: #007BFF;
     padding-bottom: 10px;
     margin-bottom: 20px;
@@ -52,7 +102,7 @@ h2 {
 /* Service Tiers Styling */
 .service-tier {
     margin-bottom: 15px;
-    padding-left: 15px; /* Indent content for readability */
+    padding-left: 15px;
 }
 
 .service-tier h3 {
@@ -60,25 +110,25 @@ h2 {
 }
 
 .service-tier p, .service-tier ul {
-    text-indent: 20px; /* Indent paragraphs and lists for readability */
+    text-indent: 20px;
     margin-bottom: 10px;
 }
 
 /* Contact Section */
 .email-link {
     font-weight: bold;
-    color: #d35400; /* Make email link stand out */
-    text-decoration: underline; /* Underline to indicate clickability */
+    color: #d35400;
+    text-decoration: underline;
 }
 
 .email-link:hover, .email-link:focus {
-    color: #e67e22; /* Lighten on hover/focus for interactivity */
-    text-decoration: none; /* Remove underline on hover/focus for a clean look */
+    color: #e67e22;
+    text-decoration: none;
 }
 
 /* Additional Styling */
 ul {
-    padding-left: 40px; /* Proper indentation for list */
+    padding-left: 40px;
 }
 
 li {
