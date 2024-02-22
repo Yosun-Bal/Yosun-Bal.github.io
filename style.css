@@ -6,75 +6,79 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #333;
+    background-color: #eaeaea; /* Softer background */
     padding: 20px;
-    background-color: #f4f4f4;
 }
 
 /* Header */
 header {
-    background: #005792;
+    background: #007BFF; /* A vibrant header color */
     color: #ffffff;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 5px solid #0056b3; /* Add a bit of depth */
+}
+
+header h1, header p {
+    text-align: center;
+    padding: 10px;
+}
+
+/* Stylish Separator for Sections */
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #fff; /* Soft white background */
+    border-radius: 10px; /* Rounded corners for a modern look */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for interactions */
+}
+
+section:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* Enhanced shadow on hover */
+}
+
+h2 {
+    border-bottom: 2px solid #007BFF; /* Underline for headers */
+    color: #007BFF;
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
 
-header h1 {
-    margin: 0;
-    padding-top: 20px;
-    text-align: center;
-}
-
-header p {
-    text-align: center;
-    margin-top: 10px;
-}
-
-/* Sections */
-section {
-    margin-bottom: 20px;
-    padding: 20px;
-    background: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-    color: #005792;
-    margin-bottom: 10px;
-}
-
-/* Service Tiers */
+/* Service Tiers Styling */
 .service-tier {
     margin-bottom: 15px;
+    padding-left: 15px; /* Indent content for readability */
 }
 
 .service-tier h3 {
-    color: #007BFF;
-}
-
-.service-tier p {
-    margin-bottom: 10px;
-}
-
-/* Contact */
-.email-link {
-    font-weight: bold;
-    color: #007BFF;
-    text-decoration: none;
-}
-
-.email-link:hover, .email-link:focus {
-    text-decoration: underline;
     color: #0056b3;
 }
 
-/* Additional Styles */
+.service-tier p, .service-tier ul {
+    text-indent: 20px; /* Indent paragraphs and lists for readability */
+    margin-bottom: 10px;
+}
+
+/* Contact Section */
+.email-link {
+    font-weight: bold;
+    color: #d35400; /* Make email link stand out */
+    text-decoration: underline; /* Underline to indicate clickability */
+}
+
+.email-link:hover, .email-link:focus {
+    color: #e67e22; /* Lighten on hover/focus for interactivity */
+    text-decoration: none; /* Remove underline on hover/focus for a clean look */
+}
+
+/* Additional Styling */
 ul {
-    margin-top: 10px;
-    list-style-position: inside;
+    padding-left: 40px; /* Proper indentation for list */
 }
 
 li {
