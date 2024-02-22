@@ -17,13 +17,16 @@ body {
 header {
     background: #007BFF; /* A vibrant header color */
     color: #ffffff;
-    padding-bottom: 20px;
+    padding: 20px;
     margin-bottom: 20px;
     border-bottom: 5px solid #0056b3; /* Add a bit of depth */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header h1, header p {
-    text-align: center;
+    margin: 0 auto;
     padding: 10px;
 }
 
