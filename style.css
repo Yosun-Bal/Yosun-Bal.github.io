@@ -1,0 +1,94 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background: #005792;
+    color: #ffffff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    padding-top: 20px;
+    text-align: center;
+}
+
+header p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Sections */
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #005792;
+    margin-bottom: 10px;
+}
+
+/* Service Tiers */
+.service-tier {
+    margin-bottom: 15px;
+}
+
+.service-tier h3 {
+    color: #007BFF;
+}
+
+.service-tier p {
+    margin-bottom: 10px;
+}
+
+/* Contact */
+.email-link {
+    font-weight: bold;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.email-link:hover, .email-link:focus {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+/* Additional Styles */
+ul {
+    margin-top: 10px;
+    list-style-position: inside;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    header h1, header p {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
