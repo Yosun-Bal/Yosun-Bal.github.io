@@ -50,17 +50,19 @@ header h1, header p {
   cursor: pointer;
   white-space: nowrap;
   font-size: inherit;
+  min-width: 100px;
 }
 
 .language-switcher .dropdown-content {
   display: none;
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
   background-color: #f9f9f9;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   text-align: left;
+  min-width: calc(100% - 20px);
+  box-sizing: border-box;
 }
 
 .language-switcher .dropdown-content a {
@@ -69,6 +71,7 @@ header h1, header p {
   text-decoration: none;
   display: block;
   font-size: inherit;
+  white-space: nowrap;
 }
 
 .language-switcher .dropdown-content a:hover {
