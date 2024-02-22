@@ -1,22 +1,28 @@
 document.addEventListener('DOMContentLoaded', function() {
-  var selector = document.getElementById('languageSwitcher');
-  if (selector) {
-    // Dynamically construct the filename based on the <html lang=""> attribute
-    const currentLang = document.documentElement.lang; // Get the language code
+  const switcherButton = document.querySelector('.language-switcher button');
+  const dropdownContent = document.querySelector('.language-switcher .dropdown-content');
 
-    // Construct the value to select based on the current language
-    let valueToSelect = `index${currentLang === 'en' ? '' : '_' + currentLang}.html`;
+  // Toggle the dropdown on button click
+  switcherButton.addEventListener('click', function(event) {
+    const isOpen = dropdownContent.style.display === 'block';
+    dropdownContent.style.display = isOpen ? 'none' : 'block';
+    switcherButton.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+    event.stopPropagation(); // Prevent the click from being captured by the window listener
+  });
 
-    // Set the selector to the correct value
-    Array.from(selector.options).forEach(option => {
-      if(option.value === valueToSelect) {
-        selector.value = valueToSelect;
-      }
-    });
+  // Close the dropdown when clicking outside of it
+  window.addEventListener('click', function() {
+    if (dropdownContent.style.display === 'block') {
+      dropdownContent.style.display = 'none';
+      switcherButton.setAttribute('aria-expanded', 'false');
+    }
+  });
 
-    // Listen for changes to redirect to the selected language version.
-    selector.addEventListener('change', function() {
-      window.location.href = this.value;
-    });
-  }
+  // Highlight the current language option
+  const currentLang = document.documentElement.lang; // Get the current page language
+  document.querySelectorAll('.language-switcher .dropdown-content a').forEach(link => {
+    if (link.getAttribute('data-lang') === currentLang) {
+      link.style.fontWeight = 'bold'; // Highlight the current language
+    }
+  });
 });
