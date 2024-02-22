@@ -31,7 +31,7 @@ header h1, header p {
 section {
     margin-bottom: 20px;
     padding: 20px;
-    background: #fff; /* Soft white background */
+    background: #f8f8f8; /* A softer shade than white */
     border-radius: 10px; /* Rounded corners for a modern look */
     box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Subtle shadow for depth */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for interactions */
